@@ -1,0 +1,10 @@
+spring: 
+    application: 
+        name: meitemayikt-order #服务的名称
+    cloud: 
+        nacos: 
+            discovery: 
+                server-addr: 127.0.0.1:8848 #nacos注册中心的地址,消费者项目从这里获取生产者的地址信息
+server: 
+    #8080,8081,8082都是会员相关的项目端口,8090,8091,8092都是订单相关项目的端口
+    port: 8090
